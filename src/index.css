@@ -51,9 +51,10 @@
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1126px;
   margin: 0 auto;
+  padding: 0 16px;
   text-align: center;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
@@ -93,6 +94,24 @@ h2 {
 }
 p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  #root {
+    padding: 0 12px;
+  }
 }
 
 code,

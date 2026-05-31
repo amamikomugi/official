@@ -40,11 +40,11 @@ function App() {
                 <span className="icon">𝕏</span>
                 <span className="label">X/Twitter</span>
               </a>
-              <a href="https://bsky.app/profile/" target="_blank" rel="noreferrer" className="social-btn bluesky" title="Bluesky">
+              <a href="https://bsky.app/profile/amamicom.bsky.social" target="_blank" rel="noreferrer" className="social-btn bluesky" title="Bluesky">
                 <span className="icon">🦋</span>
                 <span className="label">Bluesky</span>
               </a>
-              <a href="https://www.youtube.com/@" target="_blank" rel="noreferrer" className="social-btn youtube" title="YouTube">
+              <a href="https://www.youtube.com/@komugi_channel" target="_blank" rel="noreferrer" className="social-btn youtube" title="YouTube">
                 <span className="icon">▶</span>
                 <span className="label">YouTube</span>
               </a>

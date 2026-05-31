@@ -22,7 +22,7 @@ const sampleWorks: Work[] = [
       { label: '時間', value: '約3時間' },
       { label: '価格', value: '1000円' },
     ],
-    link: 'https://amamicom-shop.booth.pm/',
+    link: 'https://amamicom-shop.booth.pm/items/8105058',
   },
 ]
 

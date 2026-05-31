@@ -1,4 +1,5 @@
 import './App.css'
+import Works from './components/Works'
 
 function App() {
   return (
@@ -21,45 +22,7 @@ function App() {
       <main>
         <section id="works" className="section">
           <h2>作品一覧</h2>
-
-          <article className="card">
-            <div>
-              <p className="tag">マーダーミステリー</p>
-              <h3>崖下に沈む声</h3>
-              <p>
-                第一作。断崖に建つ小さな旅館を舞台にした、クローズドサークル型のマーダーミステリー。
-              </p>
-            </div>
-
-            <dl className="info">
-              <div>
-                <dt>人数</dt>
-                <dd>PL5人</dd>
-              </div>
-              <div>
-                <dt>時間</dt>
-                <dd>約3時間</dd>
-              </div>
-              <div>
-                <dt>GM有無</dt>
-                <dd>GMレス対応</dd>
-              </div>
-              <div>
-                <dt>形式</dt>
-                <dd>オンライン</dd>
-              </div>
-              <div>
-                <dt>価格</dt>
-                <dd>1000円</dd>
-              </div>
-            </dl>
-
-            <div className="buttons">
-              <a className="button" href="https://amamicom-shop.booth.pm/" target="_blank" rel="noreferrer">
-                BOOTHで見る
-              </a>
-            </div>
-          </article>
+          <Works />
         </section>
 
         <section id="profile" className="section">
@@ -68,8 +31,28 @@ function App() {
             <h3>甘味小麦@おーぼん</h3>
             <p>
               可能な限り読み合わせを少なく、それでいて楽しさを感じられるようなマーダーミステリーを制作しています。
+            </p>
+            <p>
               読み合わせを減らしているのは、単純に私が苦手だからです。
             </p>
+            <div className="social-links">
+              <a href="https://twitter.com/y_oubon" target="_blank" rel="noreferrer" className="social-btn twitter" title="Twitter">
+                <span className="icon">𝕏</span>
+                <span className="label">X/Twitter</span>
+              </a>
+              <a href="https://bsky.app/profile/" target="_blank" rel="noreferrer" className="social-btn bluesky" title="Bluesky">
+                <span className="icon">🦋</span>
+                <span className="label">Bluesky</span>
+              </a>
+              <a href="https://www.youtube.com/@" target="_blank" rel="noreferrer" className="social-btn youtube" title="YouTube">
+                <span className="icon">▶</span>
+                <span className="label">YouTube</span>
+              </a>
+              <a href="https://amamicom-shop.booth.pm/" target="_blank" rel="noreferrer" className="social-btn booth" title="Booth">
+                <span className="icon">🛍</span>
+                <span className="label">Booth</span>
+              </a>
+            </div>
           </div>
         </section>
 

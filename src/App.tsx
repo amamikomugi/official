@@ -8,14 +8,13 @@ function App() {
         <h1>甘味小麦@おーぼん 公式サイト</h1>
         <p className="lead">
           ここは甘味小麦@おーぼんの公式サイトです。
-          マーダーミステリー作品、制作情報、ゲーム中に使用する調査サイトなどを掲載しています。
+          マーダーミステリー作品、制作情報などを掲載する予定です。
         </p>
 
         <nav className="nav">
           <a href="#works">作品一覧</a>
           <a href="#profile">作者プロフィール</a>
           <a href="#contact">問い合わせ</a>
-          <a href="#search">調査サイト</a>
         </nav>
       </header>
 
@@ -28,7 +27,7 @@ function App() {
               <p className="tag">マーダーミステリー</p>
               <h3>崖下に沈む声</h3>
               <p>
-                断崖に建つ小さな旅館を舞台にした、クローズドサークル型のマーダーミステリー。
+                第一作。断崖に建つ小さな旅館を舞台にした、クローズドサークル型のマーダーミステリー。
               </p>
             </div>
 
@@ -43,7 +42,7 @@ function App() {
               </div>
               <div>
                 <dt>GM有無</dt>
-                <dd>GMレス対応予定</dd>
+                <dd>GMレス対応</dd>
               </div>
               <div>
                 <dt>形式</dt>
@@ -51,16 +50,13 @@ function App() {
               </div>
               <div>
                 <dt>価格</dt>
-                <dd>未設定</dd>
+                <dd>1000円</dd>
               </div>
             </dl>
 
             <div className="buttons">
-              <a className="button" href="#" target="_blank" rel="noreferrer">
+              <a className="button" href="https://amamicom-shop.booth.pm/" target="_blank" rel="noreferrer">
                 BOOTHで見る
-              </a>
-              <a className="button secondary" href="#search">
-                調査サイトへ
               </a>
             </div>
           </article>
@@ -71,7 +67,8 @@ function App() {
           <div className="card">
             <h3>甘味小麦@おーぼん</h3>
             <p>
-              マーダーミステリーを中心に、物語・推理・ギミックを組み合わせた作品を制作しています。
+              可能な限り読み合わせを少なく、それでいて楽しさを感じられるようなマーダーミステリーを制作しています。
+              読み合わせを減らしているのは、単純に私が苦手だからです。
             </p>
           </div>
         </section>
@@ -85,21 +82,6 @@ function App() {
             <a className="button" href="#" target="_blank" rel="noreferrer">
               Googleフォームへ
             </a>
-          </div>
-        </section>
-
-        <section id="search" className="section search-section">
-          <h2>ゲーム中に使う調査サイト風ページ</h2>
-          <div className="terminal">
-            <p className="terminal-title">Investigation Search System</p>
-            <label>
-              検索キーワード
-              <input type="text" placeholder="キーワードを入力" />
-            </label>
-            <button>検索する</button>
-            <p className="note">
-              ※現在は見た目だけです。あとでキーワード検索や画面遷移を追加できます。
-            </p>
           </div>
         </section>
       </main>

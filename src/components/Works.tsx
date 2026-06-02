@@ -6,6 +6,7 @@ type Work = {
   title: string
   tag: string
   description: string
+  imageUrl: string
   info: { label: string; value: string }[]
   link?: string
 }
@@ -17,6 +18,7 @@ const sampleWorks: Work[] = [
     tag: 'マーダーミステリー',
     description:
       '第一作。断崖に建つ小さな旅館を舞台にした、クローズドサークル型のマーダーミステリー。',
+    imageUrl: 'gakeshita.png',
     info: [
       { label: '人数', value: 'PL5人' },
       { label: '時間', value: '約3時間' },
@@ -35,10 +37,14 @@ export default function Works() {
         {sampleWorks.map((w) => (
           <article
             key={w.id}
-            className="card interactive"
+            className="card interactive work-card"
             onClick={() => setSelected(w)}
           >
-            <div>
+            <div
+              className="work-card-bg"
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${w.imageUrl})` }}
+            />
+            <div className="work-card-content">
               <p className="tag">{w.tag}</p>
               <h3>{w.title}</h3>
               <p className="muted">{w.description}</p>

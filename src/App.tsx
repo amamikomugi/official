@@ -1,10 +1,14 @@
+import type { CSSProperties } from 'react'
 import './App.css'
 import Works from './components/Works'
 
 function App() {
   return (
     <div className="site">
-      <header className="hero">
+      <header
+        className="hero"
+        style={{ '--hero-bg': `url(${import.meta.env.BASE_URL}header.png)` } as CSSProperties}
+      >
         <p className="eyebrow">Official Website</p>
         <h1>甘味小麦@おーぼん 公式サイト</h1>
         <p className="lead">

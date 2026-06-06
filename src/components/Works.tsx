@@ -68,7 +68,7 @@ export default function Works() {
               ))}
             </dl>
 
-            <div className="buttons">
+            <div className="buttons modal-buttons">
               <a className="button booth" href={selected.link} target="_blank" rel="noreferrer">
                 <span className="icon">🛍</span>
                 <span className="label">Booth</span>

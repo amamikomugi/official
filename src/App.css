@@ -223,6 +223,10 @@ h1 {
   gap: 12px;
 }
 
+.modal-buttons {
+  justify-content: center;
+}
+
 .button {
   display: inline-flex;
   align-items: center;

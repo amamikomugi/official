@@ -19,6 +19,7 @@ function App() {
 
         <nav className="nav">
           <a href="#works">作品一覧</a>
+          <a href="#photos">写真一覧</a>
           <a href="#profile">作者プロフィール</a>
           <a href="#contact">問い合わせ</a>
         </nav>

@@ -19,13 +19,14 @@ const photoItems = Object.entries(photoModules)
     const comment = fileName.replace(/[-_]+/g, ' ').trim() || '撮影写真'
 
     const basePath = import.meta.env.BASE_URL.replace(/\/$/, '')
-    const normalizedUrl = url
+    const normalizedPath = url
       .replace(/^\/+/, '')
       .replace(/^public\//, '')
+      .replace(/\?url$/, '')
       .replace(new RegExp(`^${basePath.replace(/^\//, '')}/`), '')
 
     return {
-      src: `${basePath}/${normalizedUrl}`,
+      src: `${basePath}/${normalizedPath}`,
       comment,
     } satisfies PhotoItem
   })

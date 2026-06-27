@@ -42,7 +42,7 @@ export default function Works() {
           >
             <div
               className="work-card-bg"
-              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${w.imageUrl})` }}
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${w.imageUrl.replace(/^\//, '')})` }}
             />
             <div className="work-card-content">
               <p className="tag">{w.tag}</p>

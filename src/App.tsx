@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
 import './App.css'
 import Works from './components/Works'
+import PhotoGallery from './components/PhotoGallery'
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
         <section id="works" className="section">
           <h2>作品一覧</h2>
           <Works />
+        </section>
+
+        <section id="photos" className="section">
+          <h2>写真一覧</h2>
+          <PhotoGallery />
         </section>
 
         <section id="profile" className="section">
